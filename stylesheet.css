@@ -1,6 +1,7 @@
 * {
     margin: 0;
     text-decoration: none;
+    font-family: 'Inter' 'sans-serif';
 }
 
 body {
@@ -15,11 +16,27 @@ body {
 
 .sidebar {
     grid-row: 1/ -1;
+    background-color: rgba(217, 217, 217, 1);
+}
+
+a[class^="dot-"] {
+    border-radius: 50%;
+}
+
+.sidebar-icon {
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
 }
 
 .navigation {
     display: flex;
     flex-direction: column;
+    font-weight: 400;
+    font-size: 16px;
+    row-gap: 16px;
+    column-gap: 28px;
+    margin-left: 37px;
 }
 
 /*<!------------------------------MEDIA------------------------------->*/
