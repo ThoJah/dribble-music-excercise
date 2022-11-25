@@ -1,20 +1,26 @@
 * {
+<<<<<<< HEAD
     margin: 0;
     text-decoration: none;
     font-family: 'Inter' 'sans-serif';
+=======
+  margin: 0;
+  text-decoration: none;
+>>>>>>> 2ad685c7de83e9091509a53a56b08177215548e0
 }
 
 body {
-    display: grid;
-    height: 100vh;
-    width: 100vw;
-    grid-template-columns: 285px 1fr 2fr;
-    grid-template-rows: 90px 50px 300px 1fr;
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 285px 1fr 2fr;
+  grid-template-rows: 90px 50px 300px 1fr;
 }
 
 /*<!-----------------------------SIDEBAR---------------------------->*/
 
 .sidebar {
+<<<<<<< HEAD
     grid-row: 1/ -1;
     background-color: rgba(217, 217, 217, 1);
 }
@@ -37,30 +43,58 @@ a[class^="dot-"] {
     row-gap: 16px;
     column-gap: 28px;
     margin-left: 37px;
+=======
+  grid-row: 1/ -1;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+>>>>>>> 2ad685c7de83e9091509a53a56b08177215548e0
 }
 
 /*<!------------------------------MEDIA------------------------------->*/
 
-.media-header {
-    grid-column: 2/ -1;
-    grid-row: 1;
+.header {
+  border: 1px solid black;
+  display: grid;
+  grid-column: 2/ -1;
+  grid-row: 1;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 35px;
+}
+
+.profile-bar > :first-child {
+  margin-right: 25px;
+}
+
+.buttonsTop {
+  justify-content: flex-end;
 }
 
 /*<!--------------              Top Artist            ---------------->*/
 
 .top-artists-heading {
-    grid-column: 2/ -1;
-    grid-row: 2;
+  grid-column: 2/ -1;
+  grid-row: 2;
 }
 
 .top-artists {
-    grid-column: 2/ -1;
-    grid-row: 3;
+  grid-column: 2/ -1;
+  grid-row: 3;
 }
 
 .now-playing {
-    grid-column: 2;
-    grid-row: 4;
+  grid-column: 2;
+  grid-row: 4;
 }
 
 /*<!--------------              Mostly Played         ---------------->*/
+
+/*<!--------------              Media-header         ---------------->*/
