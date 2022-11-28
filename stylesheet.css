@@ -1,15 +1,15 @@
 * {
   margin: 0;
   text-decoration: none;
-  font-family: 'Inter' ,sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 body {
-    display: grid;
-    height: 100vh;
-    width: 100vw;
-    grid-template-columns: 285px 1fr 2fr;
-    grid-template-rows: 90px 50px 300px 1fr;
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 285px 1fr 2fr;
+  grid-template-rows: 90px 50px 300px 1fr;
 }
 
 /*<!-----------------------------SIDEBAR---------------------------->*/
@@ -36,9 +36,9 @@ body {
 }
 
 div[class^="dot-"] {
-    border-radius: 50%;
-    width: 12px;
-    height: 12px;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
 }
 
 .dot-red {
@@ -75,6 +75,7 @@ div[class^="dot-"] {
     margin-left: 37px;
     grid-row: 1/ -1;
     padding-top: 37px;
+
 }
 
 .navigationdivs {
@@ -87,12 +88,11 @@ div[class^="dot-"] {
 .myMusic {
   display: flex;
   flex-direction: column;
-  gap: 28px;  
+  gap: 28px;
   margin-left: 37px;
   font-size: 14px;
   font-weight: 400;
   padding-top: 50px;
-
 }
 
 .playlists {
@@ -110,8 +110,8 @@ div[class^="dot-"] {
 .header {
   border: 1px solid black;
   display: grid;
-    grid-column: 2/ -1;
-    grid-row: 1;
+  grid-column: 2/ -1;
+  grid-row: 1;
 }
 
 .headerContainer {
@@ -122,8 +122,39 @@ div[class^="dot-"] {
   margin-inline: 35px;
 }
 
+.searchbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.searchbar > :first-child {
+  width: 22px;
+}
+
+.searchbar > input {
+  width: 270px;
+  height: 50px;
+  border-radius: 15px;
+}
+
+.profile-bar {
+  display: flex;
+  align-items: center;
+}
+
 .profile-bar > :first-child {
-  margin-right: 25px;
+  margin-right: 1rem;
+  width: 45px;
+}
+
+.profile-bar > img {
+  width: 35px;
+  padding-inline: 1rem;
+}
+
+.profile-bar > :nth-of-type(2) {
+  width: 25px;
 }
 
 .buttonsTop {
@@ -133,18 +164,18 @@ div[class^="dot-"] {
 /*<!--------------              Top Artist            ---------------->*/
 
 .top-artists-heading {
-    grid-column: 2/ -1;
-    grid-row: 2;
+  grid-column: 2/ -1;
+  grid-row: 2;
 }
 
 .top-artists {
-    grid-column: 2/ -1;
-    grid-row: 3;
+  grid-column: 2/ -1;
+  grid-row: 3;
 }
 
 .now-playing {
-    grid-column: 2;
-    grid-row: 4;
+  grid-column: 2;
+  grid-row: 4;
 }
 
 /*<!--------------              Mostly Played         ---------------->*/
