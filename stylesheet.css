@@ -7,6 +7,7 @@
 body {
   display: grid;
   width: 100vw;
+  min-height: 100vh;
   grid-template-columns: 285px 1fr 2fr;
   grid-template-rows: 90px 50px 300px 1fr;
   background: linear-gradient(180deg, #fceee1 0%, #fbf3f9 48.96%, #e5d7f9 100%);
@@ -223,7 +224,7 @@ div[class^="dot-"] {
 }
 
 .artist-grey-box {
-  background-color: rgba(217, 217, 217, 1);
+  background-color: white;
   width: 230px;
   height: 245px;
   border-radius: 15px;
@@ -252,7 +253,7 @@ div[class^="dot-"] {
 .player {
   height: 460px;
   width: 460px;
-  background-color: lightgray;
+  background-color: white;
   border-radius: 15px;
 }
 /*<!--------------              Mostly Played         ---------------->*/
@@ -284,7 +285,7 @@ div[class^="dot-"] {
   justify-content: space-between;
   align-items: center;
   padding-inline: 25px;
-  background-color: lightgrey;
+  background-color: white;
   border-radius: 9px;
   height: 75px;
   width: 100%;
