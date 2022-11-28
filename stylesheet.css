@@ -16,10 +16,19 @@ body {
 
 .sidebar {
     grid-row: 1/ -1;
-    background-color: rgba(217, 217, 217, 1);
-    padding: 28px;
+    padding-top: 28px;
+    padding-left: 34px;
   }
   
+.sidebar a {
+    color: black;
+}
+
+.sidebar h3 {
+    color: rgba(156, 156, 156, 1);
+
+}
+
   .dots {
     display: flex;
     flex-direction: row;
@@ -51,16 +60,16 @@ div[class^="dot-"] {
 }
 
 .sidebar-icon {
-    width: 15px;
-    height: 15px;
-    border-radius: 5px;
+    width: 16px;
+    height: 16px;
+    color: rgba(157, 157, 157, 1);
 }
 
 .navigation {
     display: flex;
     flex-direction: column;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 14px;
     row-gap: 16px;
     column-gap: 28px;
     margin-left: 37px;
@@ -68,12 +77,19 @@ div[class^="dot-"] {
     padding-top: 37px;
 }
 
+.navigationdivs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
 .myMusic {
   display: flex;
   flex-direction: column;
   gap: 28px;  
   margin-left: 37px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   padding-top: 50px;
 
@@ -84,7 +100,7 @@ div[class^="dot-"] {
   flex-direction: column;
   gap: 28px;
   margin-left: 37px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   padding-top: 50px;
 }
