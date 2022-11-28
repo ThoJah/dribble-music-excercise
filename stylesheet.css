@@ -1,32 +1,53 @@
 * {
-<<<<<<< HEAD
-    margin: 0;
-    text-decoration: none;
-    font-family: 'Inter' 'sans-serif';
-=======
   margin: 0;
   text-decoration: none;
->>>>>>> 2ad685c7de83e9091509a53a56b08177215548e0
+  font-family: 'Inter' ,sans-serif;
 }
 
 body {
-  display: grid;
-  height: 100vh;
-  width: 100vw;
-  grid-template-columns: 285px 1fr 2fr;
-  grid-template-rows: 90px 50px 300px 1fr;
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 285px 1fr 2fr;
+    grid-template-rows: 90px 50px 300px 1fr;
 }
 
 /*<!-----------------------------SIDEBAR---------------------------->*/
 
 .sidebar {
-<<<<<<< HEAD
     grid-row: 1/ -1;
     background-color: rgba(217, 217, 217, 1);
+    padding: 28px;
+  }
+  
+  .dots {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
 }
 
-a[class^="dot-"] {
+div[class^="dot-"] {
     border-radius: 50%;
+    width: 12px;
+    height: 12px;
+}
+
+.dot-red {
+  background: rgba(236, 107, 96, 1);
+  border-radius: 50%;
+  size: 12px;
+}
+
+.dot-yellow {
+  background: rgba(245, 193, 80, 1);
+  border-radius: 50%;
+  size: 12px;
+}
+
+.dot-green {
+  background: rgba(108, 191, 102, 1);
+  border-radius: 50%;
+  size: 12px;
 }
 
 .sidebar-icon {
@@ -43,14 +64,29 @@ a[class^="dot-"] {
     row-gap: 16px;
     column-gap: 28px;
     margin-left: 37px;
-=======
-  grid-row: 1/ -1;
+    grid-row: 1/ -1;
+    padding-top: 37px;
 }
 
-.navigation {
+.myMusic {
   display: flex;
   flex-direction: column;
->>>>>>> 2ad685c7de83e9091509a53a56b08177215548e0
+  gap: 28px;  
+  margin-left: 37px;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 50px;
+
+}
+
+.playlists {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-left: 37px;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 50px;
 }
 
 /*<!------------------------------MEDIA------------------------------->*/
@@ -58,8 +94,8 @@ a[class^="dot-"] {
 .header {
   border: 1px solid black;
   display: grid;
-  grid-column: 2/ -1;
-  grid-row: 1;
+    grid-column: 2/ -1;
+    grid-row: 1;
 }
 
 .headerContainer {
@@ -81,18 +117,18 @@ a[class^="dot-"] {
 /*<!--------------              Top Artist            ---------------->*/
 
 .top-artists-heading {
-  grid-column: 2/ -1;
-  grid-row: 2;
+    grid-column: 2/ -1;
+    grid-row: 2;
 }
 
 .top-artists {
-  grid-column: 2/ -1;
-  grid-row: 3;
+    grid-column: 2/ -1;
+    grid-row: 3;
 }
 
 .now-playing {
-  grid-column: 2;
-  grid-row: 4;
+    grid-column: 2;
+    grid-row: 4;
 }
 
 /*<!--------------              Mostly Played         ---------------->*/
