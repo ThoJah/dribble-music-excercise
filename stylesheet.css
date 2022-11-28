@@ -6,10 +6,11 @@
 
 body {
   display: grid;
-  height: 100vh;
   width: 100vw;
   grid-template-columns: 285px 1fr 2fr;
   grid-template-rows: 90px 50px 300px 1fr;
+  background: linear-gradient(180deg, #FCEEE1 0%, #FBF3F9 48.96%, #E5D7F9 100%);
+
 }
 
 /*<!-----------------------------SIDEBAR---------------------------->*/
@@ -18,6 +19,7 @@ body {
     grid-row: 1/ -1;
     padding-top: 28px;
     padding-left: 34px;
+    background-color: white;
   }
   
 .sidebar a {
@@ -173,11 +175,74 @@ div[class^="dot-"] {
   grid-row: 3;
 }
 
+/*<!--------------              Now Playing         ---------------->*/
+
 .now-playing {
   grid-column: 2;
   grid-row: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 30px;
 }
 
+.now-playing h3 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.player {
+  height: 460px;
+  width: 460px;
+  background-color: lightgray;
+  border-radius: 15px;
+}
 /*<!--------------              Mostly Played         ---------------->*/
 
+.mostly-played {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin-right: 44px;
+}
+
+.mostly-played-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 30px;
+}
+
+.mostly-played-header p {
+  font-size: 14px;
+  font-weight: 800;
+  color: rgba(160, 153, 158, 1);
+}
+
+.mostly-played-songs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 25px;
+  background-color: lightgrey;
+  border-radius: 9px;
+  height: 75px;
+  width: 100%;
+  padding-right: 44px;
+  margin-bottom: 21px;
+}
+
+.mostly-played-choice {
+  display: flex;
+  flex-direction: row;
+  gap: 32px
+
+}
+
+.mp-choice-preview {
+  size: 54px 54px;
+  background-color: white;
+}
 /*<!--------------              Media-header         ---------------->*/
