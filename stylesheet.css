@@ -16,6 +16,7 @@ body {
 /*<!-----------------------------SIDEBAR---------------------------->*/
 
 .sidebar {
+
     grid-row: 1/ -1;
     padding-top: 28px;
     padding-left: 34px;
@@ -23,18 +24,17 @@ body {
   }
   
 .sidebar a {
-    color: black;
+  color: black;
 }
 
 .sidebar h3 {
-    color: rgba(156, 156, 156, 1);
-
+  color: rgba(156, 156, 156, 1);
 }
 
-  .dots {
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
+.dots {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
 }
 
 div[class^="dot-"] {
@@ -62,22 +62,21 @@ div[class^="dot-"] {
 }
 
 .sidebar-icon {
-    width: 16px;
-    height: 16px;
-    color: rgba(157, 157, 157, 1);
+  width: 16px;
+  height: 16px;
+  color: rgba(157, 157, 157, 1);
 }
 
 .navigation {
-    display: flex;
-    flex-direction: column;
-    font-weight: 500;
-    font-size: 14px;
-    row-gap: 16px;
-    column-gap: 28px;
-    margin-left: 37px;
-    grid-row: 1/ -1;
-    padding-top: 37px;
-
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 14px;
+  row-gap: 16px;
+  column-gap: 28px;
+  margin-left: 37px;
+  grid-row: 1/ -1;
+  padding-top: 37px;
 }
 
 .navigationdivs {
@@ -168,6 +167,27 @@ div[class^="dot-"] {
 .top-artists-heading {
   grid-column: 2/ -1;
   grid-row: 2;
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-artist-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.arrow-buttons-right {
+  display: flex;
+  width: 35px;
+  margin-right: 75px;
+  gap: 15px;
+}
+
+.arrow-buttons-right > img {
+  display: flex;
 }
 
 .top-artists {
@@ -175,7 +195,33 @@ div[class^="dot-"] {
   grid-row: 3;
 }
 
+
 /*<!--------------              Now Playing         ---------------->*/
+
+
+.artist-container {
+  display: flex;
+}
+
+.artist-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 12px;
+}
+
+.artist-grey-box {
+  background-color: rgba(217, 217, 217, 1);
+  width: 230px;
+  height: 245px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.artist-name {
+  margin-bottom: 8px;
+  font-weight: 700;
+}
 
 .now-playing {
   grid-column: 2;
