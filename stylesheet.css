@@ -7,6 +7,7 @@
 body {
   display: grid;
   width: 100vw;
+  min-height: 100vh;
   grid-template-columns: 285px 1fr 2fr;
   grid-template-rows: 90px 50px 300px 1fr;
   background: linear-gradient(180deg, #fceee1 0%, #fbf3f9 48.96%, #e5d7f9 100%);
@@ -17,7 +18,7 @@ body {
 .sidebar {
   grid-row: 1/ -1;
   padding-top: 28px;
-  padding-left: 34px;
+  padding-left: 70px;
   background-color: white;
 }
 
@@ -72,12 +73,11 @@ div[class^="dot-"] {
   font-size: 14px;
   row-gap: 16px;
   column-gap: 28px;
-  margin-left: 37px;
   grid-row: 1/ -1;
   padding-top: 37px;
 }
 
-.navigationdivs {
+.navigationas {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -88,7 +88,6 @@ div[class^="dot-"] {
   display: flex;
   flex-direction: column;
   gap: 28px;
-  margin-left: 37px;
   font-size: 14px;
   font-weight: 400;
   padding-top: 50px;
@@ -98,7 +97,6 @@ div[class^="dot-"] {
   display: flex;
   flex-direction: column;
   gap: 28px;
-  margin-left: 37px;
   font-size: 14px;
   font-weight: 400;
   padding-top: 50px;
@@ -197,6 +195,14 @@ div[class^="dot-"] {
 .top-artists {
   grid-column: 2/ -1;
   grid-row: 3;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+
+}
+.top-artists::-webkit-scrollbar {
+  display: none;
 }
 
 /*<!--------------              Now Playing         ---------------->*/
@@ -223,7 +229,7 @@ div[class^="dot-"] {
 }
 
 .artist-grey-box {
-  background-color: rgba(217, 217, 217, 1);
+  background-color: white;
   width: 230px;
   height: 245px;
   border-radius: 15px;
@@ -252,7 +258,7 @@ div[class^="dot-"] {
 .player {
   height: 460px;
   width: 460px;
-  background-color: lightgray;
+  background-color: white;
   border-radius: 15px;
 }
 /*<!--------------              Mostly Played         ---------------->*/
@@ -284,7 +290,7 @@ div[class^="dot-"] {
   justify-content: space-between;
   align-items: center;
   padding-inline: 25px;
-  background-color: lightgrey;
+  background-color: white;
   border-radius: 9px;
   height: 75px;
   width: 100%;
@@ -302,4 +308,52 @@ div[class^="dot-"] {
   size: 54px 54px;
   background-color: white;
 }
-/*<!--------------              Media-header         ---------------->*/
+/*<!--------------              Media-Query         ---------------->*/
+@media (max-width: 600px) {
+
+body {
+  max-width: 100%;
+  grid-template-columns: 60px 1fr;
+  grid-template-rows: 90px 50px 300px 1fr 1fr;
+}
+
+.dots {
+  display: none;
+
+}
+
+.sidebar {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar img {
+  width: 32px;
+  height: 32px;
+}
+
+.navigationas p {
+  display: none;
+}
+
+.myMusic > h3 {
+  display: none;
+}
+
+
+
+.playlists {
+  display: none;
+}
+
+.arrow, .profile-bar a {
+  display: none;
+}
+
+}
